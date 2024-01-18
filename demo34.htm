@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>JAVASCRIPT</title>
+   <script>
+    //javascript class and object
+    //method->will be accessed with object
+    //functiom->will be accessed without object
+    //this-> used to instantiate the properties of class
+    //class contains properties/attributes and methods/meb
+    class Person{
+        setdata(id,name,status) //paramters
+        {
+            //pid,pname,pstatus are properties in Person class
+            this.pid=id
+            this.pname=name       //whereas id,name,status are paramters
+            this.pstatus=status
+        }
+        getdata()
+        { 
+           document.writeln("Person id: " +this.pid + "</br>" )
+           document.writeln("Person name: " +this.pname + "</br>" )
+           document.writeln("Person status: " +this.pstatus + "</br>" )
+
+
+        }
+    }
+    let p1=new Person() //p1 is an object of person class
+    p1.setdata(1,"klu",true)
+    p1.getdata()
+    let p2=new Person() //p2 is an object of person class
+    p2.setdata(2,"mswd",false)
+    p2.getdata()
+    //to access properties of class
+    document.writeln(p1.pid +"," +p1.pname+","+p1.pstatus + "</br>")
+    document.writeln(p2.pid +"," +p2.pname+","+p2.pstatus)
+    
+   </script>
+</head>
+<body>
+    
+</body>
+</html>

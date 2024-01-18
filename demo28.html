@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>JAVASCRIPT</title>
+   <script>
+    //Map object -> key value pair  here key can be string,int or any other datatype
+    const demomap = new Map()
+    demomap.set("id",123)
+    demomap.set("name","klu")
+    demomap.set("age",40.5)
+    demomap.set("status",false) //here status is of boolean datatype - >so there must not be in double quotes
+    demomap.set("name","klef")  //duplicate key -> klu will be updated as klef
+    document.writeln("map size: " +demomap.size + "</br>")
+    document.writeln("map type: " +typeof demomap + "</br>")
+
+
+    document.writeln(demomap.get("id") + "</br>") //value will be return 
+    document.writeln(demomap.get("location") + "</br>") //if key is not there -->result is undefined
+    document.writeln(demomap.has("id") + "</br>")
+    document.writeln(demomap.has("location") + "</br>") //either true or false when used has function
+    document.writeln("deletion: " + demomap.delete("status") + "</br>") //if attribute is present,it will delete and return true otherwise false
+
+document.writeln("map size: " +demomap.size + "</br>")
+document.writeln("<u> Display map keys </u></br>")
+for(let k of demomap.keys()) // .keys() -> function
+{
+    //ways of getting output
+    document.writeln(k)
+    //OR
+  //  document.writeln(demomap.get(k))
+
+}
+document.writeln("</br>")
+
+
+document.writeln("<u> Display map values </u></br>")
+for(let v of demomap.values())
+{
+    //ways of getting output
+    document.writeln(v)
+    //OR
+  //  document.writeln(demomap.get(k))
+
+}
+document.writeln("</br>")
+
+
+document.writeln("<u> Display map values based on keys</u></br>")
+for(let k of demomap.keys())
+{
+    
+   // document.writeln(v)
+    //OR
+    document.writeln(demomap.get(k))
+
+}
+document.writeln("</br>")
+
+
+document.writeln("<u> Display map keys and values</u></br>")
+for( const [k,v] of demomap.entries()) 
+{                                                  
+    document.writeln(k, " : ",v + "</br>") //every line is array of key and value
+}
+demomap.clear() //deletes keys in the map
+
+document.writeln("map size after performing clear() : " +demomap.size + "</br>")
+
+    
+   </script>
+</head>
+<body>
+    
+</body>
+</html>

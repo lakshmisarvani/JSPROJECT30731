@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>JAVASCRIPT</title>
+   <script>
+    //object
+    const person={"id":101, "name":"klu","age":34.5,"location":"guntur"}
+    document.writeln("type:"+typeof person +"</br>")
+    document.writeln(person.id+"</br>")
+    document.writeln(person.location + "</br>") //take reference from demo-6
+    document.writeln(typeof person.age + "</br>")
+    document.writeln(Object.keys(person) + "</br>")
+    document.writeln(Object.values(person) + "</br>")
+    document.writeln(Object.entries(person) + "</br>")
+
+    document.writeln("<u>Person object keys</u></br>")
+    for(let key of Object.keys(person)) //for-of gives keys whereas for-in gives array indexes
+    {
+        document.writeln(key + "</br>")
+    }
+    document.writeln("<u>Person object values</u></br>")
+for(let value of Object.values(person))
+{
+    document.writeln(value + "</br>")
+}
+document.writeln("<u>Person object keys and values</u></br>")
+for(const [a,b] of Object.entries(person)) //here instead of [a,b] , [key,value] can be used
+{
+    document.writeln(a+":"+b+"</br>")
+}
+//iterate keys
+document.writeln("<u>Person object</u></br>")
+for(const key of Object.keys(person))
+{
+    document.writeln(person[key]+"</br>") //just lyk if we print a[0], 34 will be displayed
+}
+
+
+   </script>
+</head>
+<body>
+    
+</body>
+</html>

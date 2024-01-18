@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>JAVASCRIPT</title>
+   <script>
+    //paramterised constructor
+    class Product
+    {
+        constructor(id,category,name,cost)
+        {
+            this.pid=id
+            this.pcategory=category
+            this.pname=name
+            this.pcost=cost
+        }
+        display(){
+            document.writeln("Person id: " +this.pid + "</br>" )
+           document.writeln("Person category: " +this.pcategory + "</br>" )
+           document.writeln("Person name: " +this.pname + "</br>" )
+           document.writeln("Person cost: " +this.pcost + "</br>" )
+
+        }
+    }
+    let p1=new Product(101,"book","MSWD",280.5) //constructor values can be passed during the object creation
+    p1.display()
+    document.writeln("</br>")
+    let p2=new Product(102,"clothes","saree",4999.0)
+    p2.display()
+   </script>
+</head>
+<body>
+    
+</body>
+</html>

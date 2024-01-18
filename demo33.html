@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>JAVASCRIPT</title>
+   <script>
+    let text="kluniversity" //string
+    document.writeln(`Text =${text} </br>`)
+    document.writeln(`string length= ${text.length} </br>`)
+    document.writeln("added new string to text -> " +text.concat(" cse") +"</br>")
+    document.writeln(text.toUpperCase() +"</br>")
+    document.writeln(text.toLowerCase() +"</br>")
+    document.writeln(text.charAt(11) +"</br>") //index starts from 0 
+    document.writeln(text.substring(2,5) +"</br>") //(2,5) -> (start,end-1) => string starts from 0
+    document.writeln(text[3]+"</br>")
+    document.writeln(`${text[4]},${text[8]},${text[13]} </br>`)
+    document.writeln("<u>Display Characters using for of loop<u></br>")
+    for(const ch of text)
+    {
+        document.writeln(ch +" ")
+    }
+    document.writeln("</br></br>")
+    document.writeln("<u>Display Characters using for in loop<u></br>")
+    for(const ch in text)
+    {
+        document.writeln(text[ch] +" ")
+    }
+
+
+
+
+    
+   </script>
+</head>
+<body>
+    
+</body>
+</html>

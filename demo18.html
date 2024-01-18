@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>JAVASCRIPT</title>
+   <script>
+    //Arrays
+    document.writeln("<u>Demo on Arrays </u> </br>")
+    let a=[10,20,30] //same type of elements ->homogeneous
+    document.writeln(a+"</br>")
+    document.writeln(typeof a+"</br>") //typeof the array is object
+    document.writeln(a.length +"</br>") //length of the array
+    document.writeln(a[0]+"</br>")
+    document.writeln(a[6] +"</br>") //undefined =>primitive
+    document.writeln(a[2]+"</br>")
+    document.writeln(typeof a[0]+"</br>")
+    a[2]="klu"
+    document.writeln("replacing a[2]=30  by klu... new array formed is " + a+"</br>")
+    a[4]="cse"
+    document.writeln(a+"</br>") //a[3] remains empty in browser as =>10,20,klu,,cse
+    a.push(40)
+    a.push("MSWD")
+    document.writeln("new array formed  => " + a+"</br>")
+    document.writeln(a.length +"</br>") //length of the array
+    //pop is used to delete the newly added element in the array
+    a.pop()
+    document.writeln("array formed after performing pop  => " + a+"</br>")
+    document.writeln("array's length after pop =>  " + a.length +"</br>") 
+    document.writeln("after performing reverse  : " + a.reverse() + "</br>") //reverse an array
+    document.writeln(a + "</br>")
+
+    document.writeln(a.sort() + "</br>") //sorting an array
+    document.writeln("Array: " + a + "</br>")
+
+    let element=a.shift() //first element will be removed
+    document.writeln("element removed from array : " + element +"</br>")
+    document.writeln("After shifting the Array: " + a + "</br>")
+    let len = a.unshift(10) //unshift is used to add elements into the exisiting array and returns length of new array
+    document.writeln("element added to array by Unshift : " + len +"</br>")
+    document.writeln("After shifting the Array: " + a + "</br>")
+
+    len = a.unshift("CIS","PSQT","AWS",149)
+    document.writeln("After unshifting the Array: " + a + "</br>")
+    document.writeln("</br>")
+    document.writeln("</br>")
+    document.writeln("<u>Display Array Elements using For loop </u>" + "</br>")
+    for(let i=0;i<a.length;i++)
+    {
+      document.writeln(a[i])
+    }
+    document.writeln("</br>")
+    document.writeln("</br>")
+    //document.writeln("</br>")
+    document.writeln("<u>Display Array Elements using For-in loop </u>" + "</br>")
+    for(let i in a)
+    {
+      document.writeln(a[i] + "</br>")
+    }
+    document.writeln("</br>")
+    document.writeln("</br>")
+    document.writeln("<u>Display Array Elements using For-Of loop </u>" + "</br>")
+    for(let ele of a)
+    {
+      document.writeln(ele + "</br>")
+    }
+
+   </script>
+
+</head>
+<body>
+    
+</body>
+</html>

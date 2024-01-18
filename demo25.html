@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>demo25</title>
+          <script>
+        //arrow function demo
+
+        const sum = (a,b) => a+b 
+        document.writeln("output="+sum(10.5,20.6)+"</br>")
+
+
+       const mul = (x,y) => {
+            let output = x*y
+            return output
+        }
+
+        document.writeln("output="+mul(13,14)+"</br>")
+
+        document.writeln("</br>")
+
+        const status = (n) =>{
+            if(n%2==0)
+            return true
+            else
+            return false
+        }
+        
+        let n = 11 //static variable
+        if(status(n))
+        document.writeln(n+" is Even")
+        else
+        document.writeln(n+" is Odd")
+
+        
+          </script>
+    </head>
+    <body>
+       
+    </body>
+</html>

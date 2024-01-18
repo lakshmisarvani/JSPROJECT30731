@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>JAVASCRIPT</title>
+   <script>
+    //template literal
+    const name="sarvani"
+    // ` -> symbol means backtick
+    //types of printing the name variable
+    document.writeln(name + "</br>") //traditional method
+    document.writeln("Using template literal = "  + `${name}` + "</br>") //using template literal
+    document.writeln(`<b> My name is ${name}</b> </br>`)
+
+
+    //spread operator ->merging two arrays,iterate array object
+    // ... ->means spread operator
+     const a=[1,2,3]
+     const b=[...a,4,5] //implementation of spread operator
+     document.writeln(a + "</br>") 
+     document.writeln("used spread operator : " + b + "</br>") 
+
+
+     const p=[10,20,30]
+     const q=[40,50,60]
+     const r=[...p,...q]
+     document.writeln(p + "</br>") 
+     document.writeln("used spread operator : " + q + "</br>") 
+     document.writeln(r+"</br>")
+
+      const v1="kluniversity"
+      const v2=[... v1]
+      document.writeln("v1="+v1+"</br>")
+      document.writeln("v2="+v2+"</br>")
+      
+     //destructing assignment ->used to extract elements from the array and assigning to separate variables
+     const arr=["os","aws","jfsd",15,25]
+     document.writeln("Array arr: " +arr + "</br>")
+     document.writeln("Array length of arr="+arr.length + "</br>")
+      const [m,s,w,d,sub] = arr 
+      document.writeln(m+"</br>" + s + "</br>" + w + "</br>" + d + "</br>" + sub + "</br>")
+      const[o,n]=arr
+      document.writeln("when indexes>new element names => " +o + " " + n + "</br>")
+
+      //if we want to miss a particular index
+      const[i,,,j]=arr
+      document.writeln("neglecting some elements using , operator: "+ i + " " + j + "</br>")
+
+   </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>JAVASCRIPT</title>
+   <script>
+    //Map method -> used to change the elements in existing array by applying some operations
+    const arr1= [23,45,62,87,47,68,44]
+    document.writeln("Array1 = " +arr1 + "</br>")
+    const output1= arr1.map( (number) => number*20)
+    document.writeln("Array output 1 = " +output1 + "</br>")
+
+    //filter method -> used to divide elements from the array based on required condition
+    const arr2=[10,20,46,58,33,67,99]
+    //filtered based on even number condition
+
+    const output2=arr2.filter((element) => element%2==0)
+ document.writeln("Array output 2 using filter = " +output2 + "</br>")
+
+ //reduced method =>single output(accumulated)
+ const arr3=[10,20,30,49]
+ const display=(sum,element) => sum+=element
+ document.writeln("Sum of arr3= " +arr3.reduce(display,0))
+ //OR
+ //document.writeln("Sum of arr3= " +arr3.reduce((sum,element) => sum+=element))
+   </script>
+</head>
+<body>
+    
+</body>
+</html>

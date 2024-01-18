@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>JAVASCRIPT</title>
+   <script>
+    //Recursive function demo 
+    function fact(n)
+    {
+      /*  if(n==0)   //using traditional method
+        return 1
+    else{
+        return n*fact(n-1)
+    } */
+
+    //using ternary operator
+   let o=(n==0) ? 1 : n*fact(n-1)
+   return o;
+    }
+    const a=parseInt(prompt("enter a value",0))
+    alert("Output : " +fact(a))
+
+   </script>
+</head>
+<body>
+    
+</body>
+</html>

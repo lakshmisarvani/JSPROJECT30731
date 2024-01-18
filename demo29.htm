@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>JAVASCRIPT</title>
+   <script>
+      //Map object -> foreach method [key and value can be of any datatype] whereas in normal object -> key should be of only string
+      const mapobj1 = new Map();
+      mapobj1.set(1,101) //these(1-> id and 101->value) are of integer format
+      mapobj1.set("id",1234)
+      mapobj1.set("name","klu")
+
+      document.writeln("map object 1 size = " +mapobj1.size + "</br>")
+      document.writeln("<u>Map Object 1 values</u> </br>")
+      
+      //forEach method is used to iterate map object
+         //in for each method -> 1 parameter is value and 2 paramters indicates value and key
+      mapobj1.forEach( (value) => document.writeln(value + "</br>"))  //arrow function inside forEach method
+
+         document.writeln("<u>Map Object 1 keys & values</u> </br>")
+         mapobj1.forEach((value,key) => document.writeln(key + " : " + value + "</br>")) 
+         //when we pass obj instead of value,key in forEach method -> it prints values of map object
+         const mapobj2 = new Map([["id",101],["name","klu"]]) //constructor
+
+        document.writeln("map object 2 size = " +mapobj2.size + "</br>")
+
+      document.writeln("<u>Map Object 2 values</u> </br>")
+        mapobj2.forEach( (v) => document.writeln(v+ "</br>")) 
+
+        document.writeln("<u>Map Object 2 keys and values</u> </br>")
+        const display= (v,k) => {
+         document.writeln(k+ " : " + v + "</br>")
+        }
+         //if we pass function as an paramter/argument, it is callback
+         mapobj2.forEach(display) //here display is callback
+
+
+
+
+
+
+
+
+    
+   </script>
+</head>
+<body>
+    
+</body>
+</html>
